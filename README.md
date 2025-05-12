@@ -17,13 +17,14 @@ Before using this package, ensure that the following packages are installed:
 4. [mwprop-1.0.10](https://github.com/stella-ocker/mwprop)
 5. [importlib_resources](https://pypi.org/project/importlib-resources/)
 6. [healpy-1.18.0](https://pypi.org/project/healpy/)
-7. [FRB](https://github.com/FRBs/FRB)
+7. [FRB](https://github.com/FRBs/FRB)   
 This package depends on the `FRB` package developed at https://github.com/FRBs/FRB, which is not available via PyPI.   
 Please install it manually before using `pyhesdm`:   
 ```bash
 git clone https://github.com/FRBs/FRB.git
 cd FRB
 pip install .
+```
 
 ### Download   
 ```
