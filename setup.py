@@ -35,7 +35,7 @@ setup(
         'linetools==0.3.2',
         'mwprop==1.0.10',
         'importlib_resources',
-        'healpy==1.18.0'
+        'healpy==1.17.3'
     ],
     cmdclass={
         'install': PostInstallCommand,
