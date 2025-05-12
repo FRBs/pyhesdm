@@ -3,16 +3,6 @@ from setuptools.command.install import install
 import urllib.request
 import os
 
-class PostInstallCommand(install):
-    def run(self):
-        install.run(self)
-        url = 'https://ned.ipac.caltech.edu/NED::LVS/fits/Current/'
-        destination = f"{os.path.dirname(__file__)}/pyhesdm/NEDLVS_20210922_v2.fits"
-        if not os.path.exists(destination):
-            print(f'Downloading NEDLVS Catalog from {url}...')
-            urllib.request.urlretrieve(url, destination)
-            print('Download complete.')
-
 setup(
     name='pyhesdm',
     version='0.1.4',
@@ -40,8 +30,5 @@ setup(
         'mwprop==1.0.10',
         'importlib_resources',
         'healpy==1.17.3'
-    ],
-    cmdclass={
-        'install': PostInstallCommand,
-    }
+    ]
 )
