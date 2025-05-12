@@ -22,7 +22,10 @@ setup(
     author='Yuxin Huang, Khee-Gan Lee, Noam Libeskind, Sunil Simha, Aurélien Valade and J. X. Prochaska',
     author_email='mochafhxy@gmail.com',
     url='https://github.com/yuxinhuang1229/pyhesdm',
-    packages=['pyhesdm'],
+    packages=find_packages(),
+    include_package_data=True,
+    package_data={
+        'pyhesdm': ['*.csv']
     classifiers=[
         'Programming Language :: Python :: 3',
         'License :: OSI Approved :: MIT License',
