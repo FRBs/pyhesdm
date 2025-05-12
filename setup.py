@@ -5,7 +5,7 @@ import os
 
 setup(
     name='pyhesdm',
-    version='0.1.5',
+    version='0.1.6',
     description='Local Universe Dispersion Measure Model Computed from HESTIA Simulation',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
