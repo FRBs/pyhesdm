@@ -25,10 +25,13 @@ from frb.frb import FRB
 from frb.galaxies.frbgalaxy import FRBHost
 from frb.surveys.catalog_utils import xmatch_catalogs
 
+from .download import download_nedlvs_if_needed
+
 class NEDLVS_Tully_Halos:
     
     def __init__(self, ned_file = f'{os.path.dirname(__file__)}/NEDLVS_20210922_v2.fits',
                 tully_file = f'{os.path.dirname(__file__)}/tully_groups.csv'):
+        download_nedlvs_if_needed()
         self.cosmo = FlatLambdaCDM(H0=67.77, Om0=0.270, Tcmb0=2.725, Ob0=0.048)
         self.nedlvs_tab = self.get_nedlvs_tab(ned_file)
         self.tully_tab = self.get_tully_tab(tully_file)
