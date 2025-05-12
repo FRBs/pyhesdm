@@ -26,6 +26,7 @@ setup(
     include_package_data=True,
     package_data={
         'pyhesdm': ['*.csv']
+    },
     classifiers=[
         'Programming Language :: Python :: 3',
         'License :: OSI Approved :: MIT License',
