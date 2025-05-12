@@ -15,7 +15,7 @@ class PostInstallCommand(install):
 
 setup(
     name='pyhesdm',
-    version='0.1.3',
+    version='0.1.4',
     description='Local Universe Dispersion Measure Model Computed from HESTIA Simulation',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
