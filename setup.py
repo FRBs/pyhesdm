@@ -29,6 +29,14 @@ setup(
         'Operating System :: OS Independent',
     ],
     python_requires='>=3.7',
+    install_requires=[
+        'ne2001==0.0.1',
+        'dust_extinction==1.5',
+        'linetools==0.3.2',
+        'mwprop==1.0.10',
+        'importlib_resources',
+        'healpy==1.18.0'
+    ],
     cmdclass={
         'install': PostInstallCommand,
     }
